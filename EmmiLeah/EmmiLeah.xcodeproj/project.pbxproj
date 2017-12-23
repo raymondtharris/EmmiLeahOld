@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB131FEDEE940085AD36 /* AppDelegate.swift */; };
-		2244FB161FEDEE940085AD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB151FEDEE940085AD36 /* ViewController.swift */; };
 		2244FB191FEDEE940085AD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB171FEDEE940085AD36 /* Main.storyboard */; };
 		2244FB1B1FEDEE940085AD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB1A1FEDEE940085AD36 /* Assets.xcassets */; };
 		2244FB1E1FEDEE940085AD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */; };
@@ -19,6 +18,11 @@
 		2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB451FEE04D60085AD36 /* Octalye.swift */; };
 		2244FB481FEE32A70085AD36 /* Freya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB471FEE32A70085AD36 /* Freya.swift */; };
 		2244FB4A1FEE353F0085AD36 /* OctalyeTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */; };
+		2244FB4C1FEECF670085AD36 /* Flow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB4B1FEECF670085AD36 /* Flow.swift */; };
+		2244FB4F1FEED2D30085AD36 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2244FB4E1FEED2D30085AD36 /* GameKit.framework */; };
+		2244FB511FEEDF0A0085AD36 /* OvreiTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB501FEEDF0A0085AD36 /* OvreiTypes.plist */; };
+		2244FB531FEEEF190085AD36 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB521FEEEF190085AD36 /* SelectionViewController.swift */; };
+		2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,6 @@
 /* Begin PBXFileReference section */
 		2244FB101FEDEE940085AD36 /* EmmiLeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmmiLeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2244FB131FEDEE940085AD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2244FB151FEDEE940085AD36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2244FB181FEDEE940085AD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2244FB1A1FEDEE940085AD36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2244FB1D1FEDEE940085AD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -57,6 +60,11 @@
 		2244FB451FEE04D60085AD36 /* Octalye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octalye.swift; sourceTree = "<group>"; };
 		2244FB471FEE32A70085AD36 /* Freya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freya.swift; sourceTree = "<group>"; };
 		2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OctalyeTypes.plist; sourceTree = "<group>"; };
+		2244FB4B1FEECF670085AD36 /* Flow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flow.swift; sourceTree = "<group>"; };
+		2244FB4E1FEED2D30085AD36 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		2244FB501FEEDF0A0085AD36 /* OvreiTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OvreiTypes.plist; sourceTree = "<group>"; };
+		2244FB521FEEEF190085AD36 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
+		2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2244FB4F1FEED2D30085AD36 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +100,7 @@
 				2244FB271FEDEE940085AD36 /* EmmiLeahTests */,
 				2244FB321FEDEE940085AD36 /* EmmiLeahUITests */,
 				2244FB111FEDEE940085AD36 /* Products */,
+				2244FB4D1FEED2D30085AD36 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,12 +118,15 @@
 			isa = PBXGroup;
 			children = (
 				2244FB131FEDEE940085AD36 /* AppDelegate.swift */,
-				2244FB151FEDEE940085AD36 /* ViewController.swift */,
+				2244FB521FEEEF190085AD36 /* SelectionViewController.swift */,
+				2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */,
 				2244FB411FEDEF290085AD36 /* Player.swift */,
 				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
 				2244FB451FEE04D60085AD36 /* Octalye.swift */,
 				2244FB471FEE32A70085AD36 /* Freya.swift */,
+				2244FB4B1FEECF670085AD36 /* Flow.swift */,
 				2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */,
+				2244FB501FEEDF0A0085AD36 /* OvreiTypes.plist */,
 				2244FB171FEDEE940085AD36 /* Main.storyboard */,
 				2244FB1A1FEDEE940085AD36 /* Assets.xcassets */,
 				2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */,
@@ -138,6 +151,14 @@
 				2244FB351FEDEE940085AD36 /* Info.plist */,
 			);
 			path = EmmiLeahUITests;
+			sourceTree = "<group>";
+		};
+		2244FB4D1FEED2D30085AD36 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2244FB4E1FEED2D30085AD36 /* GameKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,6 +230,11 @@
 					2244FB0F1FEDEE940085AD36 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.GameCenter = {
+								enabled = 1;
+							};
+						};
 					};
 					2244FB231FEDEE940085AD36 = {
 						CreatedOnToolsVersion = 9.2;
@@ -248,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2244FB1E1FEDEE940085AD36 /* LaunchScreen.storyboard in Resources */,
+				2244FB511FEEDF0A0085AD36 /* OvreiTypes.plist in Resources */,
 				2244FB1B1FEDEE940085AD36 /* Assets.xcassets in Resources */,
 				2244FB4A1FEE353F0085AD36 /* OctalyeTypes.plist in Resources */,
 				2244FB191FEDEE940085AD36 /* Main.storyboard in Resources */,
@@ -275,10 +302,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2244FB161FEDEE940085AD36 /* ViewController.swift in Sources */,
+				2244FB4C1FEECF670085AD36 /* Flow.swift in Sources */,
 				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
 				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
+				2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */,
 				2244FB481FEE32A70085AD36 /* Freya.swift in Sources */,
+				2244FB531FEEEF190085AD36 /* SelectionViewController.swift in Sources */,
 				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
 				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
 			);
@@ -447,6 +476,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68W5V575MP;
 				INFOPLIST_FILE = EmmiLeah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeah;
@@ -461,6 +491,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 68W5V575MP;
 				INFOPLIST_FILE = EmmiLeah/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeah;

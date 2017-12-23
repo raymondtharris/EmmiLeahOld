@@ -1,24 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Title Screen View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TitleScreenViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EmmiLeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-vb-YHG">
+                                <rect key="frame" x="87" y="62" width="200" height="54"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-ns-KJO">
+                                <rect key="frame" x="163" y="420" width="49" height="30"/>
+                                <state key="normal" title="Arcade"/>
+                                <connections>
+                                    <segue destination="41D-Ic-1hm" kind="show" identifier="showSelectionSegue" id="nDD-vZ-qZi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPi-xp-OJr">
+                                <rect key="frame" x="169" y="472" width="36" height="30"/>
+                                <state key="normal" title="Shop"/>
+                                <connections>
+                                    <segue destination="3c0-Tn-1xN" kind="show" id="0ar-yx-QOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-4M-cdl">
+                                <rect key="frame" x="159" y="525" width="57" height="30"/>
+                                <state key="normal" title="Settings"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4f7-vb-YHG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="02I-0d-F7l"/>
+                            <constraint firstItem="4f7-vb-YHG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Olk-my-baC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yP6-4M-cdl" secondAttribute="bottom" constant="112" id="SD5-iE-a8M"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPi-xp-OJr" secondAttribute="bottom" constant="165" id="VD7-bO-fKl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bmn-ns-KJO" secondAttribute="bottom" constant="217" id="XM1-yT-DQA"/>
+                            <constraint firstItem="Bmn-ns-KJO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xtj-xW-wN3"/>
+                            <constraint firstItem="FPi-xp-OJr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h3u-4W-G0A"/>
+                            <constraint firstItem="yP6-4M-cdl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hTV-nR-ZsS"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="ArcadeButton" destination="Bmn-ns-KJO" id="Q5v-AO-Q28"/>
+                        <outlet property="GameTitleLabel" destination="4f7-vb-YHG" id="Y69-sU-Mlf"/>
+                        <outlet property="SettingsButton" destination="yP6-4M-cdl" id="If4-hY-LbA"/>
+                        <outlet property="ShopButton" destination="FPi-xp-OJr" id="eRz-Ao-f0Q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="139.5" y="133.5"/>
+        </scene>
+        <!--Selection View Controller-->
+        <scene sceneID="ME8-Jb-RNn">
+            <objects>
+                <viewController id="41D-Ic-1hm" customClass="SelectionViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ejS-0G-oSP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-9H-Woo">
+                                <rect key="frame" x="170" y="544" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <segue destination="xi4-LW-leg" kind="show" id="8yW-wP-LyR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="17A-sa-Xno"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HFg-5N-emX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="-223"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="dZD-VK-3EY">
+            <objects>
+                <viewController id="xi4-LW-leg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fxd-zZ-v4J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="NHV-yA-Ox3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8pN-s9-M61" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2007" y="-181"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="d0x-ds-F3G">
+            <objects>
+                <viewController id="3c0-Tn-1xN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SMs-2v-3dc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="8mn-jE-Kru"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sgj-qV-QZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1028" y="508"/>
         </scene>
     </scenes>
 </document>

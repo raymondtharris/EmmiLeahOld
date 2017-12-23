@@ -8,12 +8,19 @@
 
 import Foundation
 
-class Ovrei {
+class Ovrei: CustomStringConvertible {
     var name:String = ""
     var currentKarh: Int
     var maxKarh:Int
-    
+    var description: String {
+        return "\(self.name)"
+    }
     init() {
+        currentKarh = 20
+        maxKarh = 20
+    }
+    init(stats: Dictionary<String, Any>) {
+        name = stats["name"] as! String
         currentKarh = 20
         maxKarh = 20
     }
