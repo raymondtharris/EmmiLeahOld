@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB131FEDEE940085AD36 /* AppDelegate.swift */; };
+		2244FB161FEDEE940085AD36 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB151FEDEE940085AD36 /* ViewController.swift */; };
+		2244FB191FEDEE940085AD36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB171FEDEE940085AD36 /* Main.storyboard */; };
+		2244FB1B1FEDEE940085AD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB1A1FEDEE940085AD36 /* Assets.xcassets */; };
+		2244FB1E1FEDEE940085AD36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */; };
+		2244FB291FEDEE940085AD36 /* EmmiLeahTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB281FEDEE940085AD36 /* EmmiLeahTests.swift */; };
+		2244FB341FEDEE940085AD36 /* EmmiLeahUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB331FEDEE940085AD36 /* EmmiLeahUITests.swift */; };
+		2244FB421FEDEF290085AD36 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB411FEDEF290085AD36 /* Player.swift */; };
+		2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB431FEDFFE10085AD36 /* Ovrei.swift */; };
+		2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB451FEE04D60085AD36 /* Octalye.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2244FB251FEDEE940085AD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2244FB081FEDEE940085AD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2244FB0F1FEDEE940085AD36;
+			remoteInfo = EmmiLeah;
+		};
+		2244FB301FEDEE940085AD36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2244FB081FEDEE940085AD36 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2244FB0F1FEDEE940085AD36;
+			remoteInfo = EmmiLeah;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2244FB101FEDEE940085AD36 /* EmmiLeah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EmmiLeah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2244FB131FEDEE940085AD36 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2244FB151FEDEE940085AD36 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2244FB181FEDEE940085AD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2244FB1A1FEDEE940085AD36 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2244FB1D1FEDEE940085AD36 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2244FB1F1FEDEE940085AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2244FB241FEDEE940085AD36 /* EmmiLeahTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmmiLeahTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2244FB281FEDEE940085AD36 /* EmmiLeahTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmiLeahTests.swift; sourceTree = "<group>"; };
+		2244FB2A1FEDEE940085AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2244FB2F1FEDEE940085AD36 /* EmmiLeahUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EmmiLeahUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2244FB331FEDEE940085AD36 /* EmmiLeahUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmmiLeahUITests.swift; sourceTree = "<group>"; };
+		2244FB351FEDEE940085AD36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2244FB411FEDEF290085AD36 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		2244FB431FEDFFE10085AD36 /* Ovrei.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ovrei.swift; sourceTree = "<group>"; };
+		2244FB451FEE04D60085AD36 /* Octalye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octalye.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2244FB0D1FEDEE940085AD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB211FEDEE940085AD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB2C1FEDEE940085AD36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2244FB071FEDEE940085AD36 = {
+			isa = PBXGroup;
+			children = (
+				2244FB121FEDEE940085AD36 /* EmmiLeah */,
+				2244FB271FEDEE940085AD36 /* EmmiLeahTests */,
+				2244FB321FEDEE940085AD36 /* EmmiLeahUITests */,
+				2244FB111FEDEE940085AD36 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2244FB111FEDEE940085AD36 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2244FB101FEDEE940085AD36 /* EmmiLeah.app */,
+				2244FB241FEDEE940085AD36 /* EmmiLeahTests.xctest */,
+				2244FB2F1FEDEE940085AD36 /* EmmiLeahUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2244FB121FEDEE940085AD36 /* EmmiLeah */ = {
+			isa = PBXGroup;
+			children = (
+				2244FB131FEDEE940085AD36 /* AppDelegate.swift */,
+				2244FB151FEDEE940085AD36 /* ViewController.swift */,
+				2244FB411FEDEF290085AD36 /* Player.swift */,
+				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
+				2244FB451FEE04D60085AD36 /* Octalye.swift */,
+				2244FB171FEDEE940085AD36 /* Main.storyboard */,
+				2244FB1A1FEDEE940085AD36 /* Assets.xcassets */,
+				2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */,
+				2244FB1F1FEDEE940085AD36 /* Info.plist */,
+			);
+			path = EmmiLeah;
+			sourceTree = "<group>";
+		};
+		2244FB271FEDEE940085AD36 /* EmmiLeahTests */ = {
+			isa = PBXGroup;
+			children = (
+				2244FB281FEDEE940085AD36 /* EmmiLeahTests.swift */,
+				2244FB2A1FEDEE940085AD36 /* Info.plist */,
+			);
+			path = EmmiLeahTests;
+			sourceTree = "<group>";
+		};
+		2244FB321FEDEE940085AD36 /* EmmiLeahUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2244FB331FEDEE940085AD36 /* EmmiLeahUITests.swift */,
+				2244FB351FEDEE940085AD36 /* Info.plist */,
+			);
+			path = EmmiLeahUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2244FB0F1FEDEE940085AD36 /* EmmiLeah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2244FB381FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeah" */;
+			buildPhases = (
+				2244FB0C1FEDEE940085AD36 /* Sources */,
+				2244FB0D1FEDEE940085AD36 /* Frameworks */,
+				2244FB0E1FEDEE940085AD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EmmiLeah;
+			productName = EmmiLeah;
+			productReference = 2244FB101FEDEE940085AD36 /* EmmiLeah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2244FB231FEDEE940085AD36 /* EmmiLeahTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2244FB3B1FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeahTests" */;
+			buildPhases = (
+				2244FB201FEDEE940085AD36 /* Sources */,
+				2244FB211FEDEE940085AD36 /* Frameworks */,
+				2244FB221FEDEE940085AD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2244FB261FEDEE940085AD36 /* PBXTargetDependency */,
+			);
+			name = EmmiLeahTests;
+			productName = EmmiLeahTests;
+			productReference = 2244FB241FEDEE940085AD36 /* EmmiLeahTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2244FB2E1FEDEE940085AD36 /* EmmiLeahUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2244FB3E1FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeahUITests" */;
+			buildPhases = (
+				2244FB2B1FEDEE940085AD36 /* Sources */,
+				2244FB2C1FEDEE940085AD36 /* Frameworks */,
+				2244FB2D1FEDEE940085AD36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2244FB311FEDEE940085AD36 /* PBXTargetDependency */,
+			);
+			name = EmmiLeahUITests;
+			productName = EmmiLeahUITests;
+			productReference = 2244FB2F1FEDEE940085AD36 /* EmmiLeahUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2244FB081FEDEE940085AD36 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Tim Harris";
+				TargetAttributes = {
+					2244FB0F1FEDEE940085AD36 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					2244FB231FEDEE940085AD36 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2244FB0F1FEDEE940085AD36;
+					};
+					2244FB2E1FEDEE940085AD36 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 2244FB0F1FEDEE940085AD36;
+					};
+				};
+			};
+			buildConfigurationList = 2244FB0B1FEDEE940085AD36 /* Build configuration list for PBXProject "EmmiLeah" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2244FB071FEDEE940085AD36;
+			productRefGroup = 2244FB111FEDEE940085AD36 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2244FB0F1FEDEE940085AD36 /* EmmiLeah */,
+				2244FB231FEDEE940085AD36 /* EmmiLeahTests */,
+				2244FB2E1FEDEE940085AD36 /* EmmiLeahUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2244FB0E1FEDEE940085AD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244FB1E1FEDEE940085AD36 /* LaunchScreen.storyboard in Resources */,
+				2244FB1B1FEDEE940085AD36 /* Assets.xcassets in Resources */,
+				2244FB191FEDEE940085AD36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB221FEDEE940085AD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB2D1FEDEE940085AD36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2244FB0C1FEDEE940085AD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244FB161FEDEE940085AD36 /* ViewController.swift in Sources */,
+				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
+				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
+				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
+				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB201FEDEE940085AD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244FB291FEDEE940085AD36 /* EmmiLeahTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2244FB2B1FEDEE940085AD36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2244FB341FEDEE940085AD36 /* EmmiLeahUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2244FB261FEDEE940085AD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2244FB0F1FEDEE940085AD36 /* EmmiLeah */;
+			targetProxy = 2244FB251FEDEE940085AD36 /* PBXContainerItemProxy */;
+		};
+		2244FB311FEDEE940085AD36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2244FB0F1FEDEE940085AD36 /* EmmiLeah */;
+			targetProxy = 2244FB301FEDEE940085AD36 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2244FB171FEDEE940085AD36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2244FB181FEDEE940085AD36 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2244FB1D1FEDEE940085AD36 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2244FB361FEDEE940085AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2244FB371FEDEE940085AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2244FB391FEDEE940085AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2244FB3A1FEDEE940085AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeah/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2244FB3C1FEDEE940085AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmmiLeah.app/EmmiLeah";
+			};
+			name = Debug;
+		};
+		2244FB3D1FEDEE940085AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeahTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeahTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EmmiLeah.app/EmmiLeah";
+			};
+			name = Release;
+		};
+		2244FB3F1FEDEE940085AD36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmmiLeah;
+			};
+			name = Debug;
+		};
+		2244FB401FEDEE940085AD36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = EmmiLeahUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.raymondtharris.EmmiLeahUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = EmmiLeah;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2244FB0B1FEDEE940085AD36 /* Build configuration list for PBXProject "EmmiLeah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244FB361FEDEE940085AD36 /* Debug */,
+				2244FB371FEDEE940085AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2244FB381FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244FB391FEDEE940085AD36 /* Debug */,
+				2244FB3A1FEDEE940085AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2244FB3B1FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeahTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244FB3C1FEDEE940085AD36 /* Debug */,
+				2244FB3D1FEDEE940085AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2244FB3E1FEDEE940085AD36 /* Build configuration list for PBXNativeTarget "EmmiLeahUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2244FB3F1FEDEE940085AD36 /* Debug */,
+				2244FB401FEDEE940085AD36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2244FB081FEDEE940085AD36 /* Project object */;
+}
