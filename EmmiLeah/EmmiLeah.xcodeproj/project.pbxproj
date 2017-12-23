@@ -17,6 +17,8 @@
 		2244FB421FEDEF290085AD36 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB411FEDEF290085AD36 /* Player.swift */; };
 		2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB431FEDFFE10085AD36 /* Ovrei.swift */; };
 		2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB451FEE04D60085AD36 /* Octalye.swift */; };
+		2244FB481FEE32A70085AD36 /* Freya.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB471FEE32A70085AD36 /* Freya.swift */; };
+		2244FB4A1FEE353F0085AD36 /* OctalyeTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		2244FB411FEDEF290085AD36 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		2244FB431FEDFFE10085AD36 /* Ovrei.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ovrei.swift; sourceTree = "<group>"; };
 		2244FB451FEE04D60085AD36 /* Octalye.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Octalye.swift; sourceTree = "<group>"; };
+		2244FB471FEE32A70085AD36 /* Freya.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Freya.swift; sourceTree = "<group>"; };
+		2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OctalyeTypes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				2244FB411FEDEF290085AD36 /* Player.swift */,
 				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
 				2244FB451FEE04D60085AD36 /* Octalye.swift */,
+				2244FB471FEE32A70085AD36 /* Freya.swift */,
+				2244FB491FEE353F0085AD36 /* OctalyeTypes.plist */,
 				2244FB171FEDEE940085AD36 /* Main.storyboard */,
 				2244FB1A1FEDEE940085AD36 /* Assets.xcassets */,
 				2244FB1C1FEDEE940085AD36 /* LaunchScreen.storyboard */,
@@ -243,6 +249,7 @@
 			files = (
 				2244FB1E1FEDEE940085AD36 /* LaunchScreen.storyboard in Resources */,
 				2244FB1B1FEDEE940085AD36 /* Assets.xcassets in Resources */,
+				2244FB4A1FEE353F0085AD36 /* OctalyeTypes.plist in Resources */,
 				2244FB191FEDEE940085AD36 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,6 +278,7 @@
 				2244FB161FEDEE940085AD36 /* ViewController.swift in Sources */,
 				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
 				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
+				2244FB481FEE32A70085AD36 /* Freya.swift in Sources */,
 				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
 				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
 			);

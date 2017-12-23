@@ -24,3 +24,15 @@ class EmmiLeahPlayer {
         currentOctalye = Octalye()
     }
 }
+
+func loadOctalye(anOvrei:Ovrei) -> Array<Octalye>? {
+    var array: Array<Octalye> = []
+    if let filePath = Bundle.main.path(forResource: "OctalyeTypes", ofType: "plist") {
+        let data = NSArray.init(contentsOfFile: filePath) as! [[String:AnyObject]]
+        for anOctalyeDict:Dictionary in data {
+            array.append(Octalye(anOvrei: anOvrei , stats: anOctalyeDict))
+        }
+        return array
+    }
+    return nil
+}
