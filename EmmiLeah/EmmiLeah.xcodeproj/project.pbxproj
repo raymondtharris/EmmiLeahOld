@@ -23,6 +23,8 @@
 		2244FB511FEEDF0A0085AD36 /* OvreiTypes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2244FB501FEEDF0A0085AD36 /* OvreiTypes.plist */; };
 		2244FB531FEEEF190085AD36 /* SelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB521FEEEF190085AD36 /* SelectionViewController.swift */; };
 		2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */; };
+		2244FB571FEF218D0085AD36 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */; };
+		2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB581FEF4D0D0085AD36 /* Transcendence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		2244FB501FEEDF0A0085AD36 /* OvreiTypes.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = OvreiTypes.plist; sourceTree = "<group>"; };
 		2244FB521FEEEF190085AD36 /* SelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionViewController.swift; sourceTree = "<group>"; };
 		2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
+		2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
+		2244FB581FEF4D0D0085AD36 /* Transcendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcendence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +124,8 @@
 				2244FB131FEDEE940085AD36 /* AppDelegate.swift */,
 				2244FB521FEEEF190085AD36 /* SelectionViewController.swift */,
 				2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */,
+				2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */,
+				2244FB581FEF4D0D0085AD36 /* Transcendence.swift */,
 				2244FB411FEDEF290085AD36 /* Player.swift */,
 				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
 				2244FB451FEE04D60085AD36 /* Octalye.swift */,
@@ -303,12 +309,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2244FB4C1FEECF670085AD36 /* Flow.swift in Sources */,
+				2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */,
 				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
 				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
 				2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */,
 				2244FB481FEE32A70085AD36 /* Freya.swift in Sources */,
 				2244FB531FEEEF190085AD36 /* SelectionViewController.swift in Sources */,
 				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
+				2244FB571FEF218D0085AD36 /* GamePlayViewController.swift in Sources */,
 				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

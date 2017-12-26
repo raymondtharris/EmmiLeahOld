@@ -14,7 +14,7 @@
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TitleScreenViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MTKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -80,7 +80,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
                                 <connections>
-                                    <segue destination="xi4-LW-leg" kind="show" id="8yW-wP-LyR"/>
+                                    <segue destination="xi4-LW-leg" kind="show" identifier="GamePlaySegue" id="8yW-wP-LyR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="1028" y="-223"/>
         </scene>
-        <!--View Controller-->
+        <!--Game Play View Controller-->
         <scene sceneID="dZD-VK-3EY">
             <objects>
-                <viewController id="xi4-LW-leg" sceneMemberID="viewController">
+                <viewController id="xi4-LW-leg" customClass="GamePlayViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxd-zZ-v4J">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

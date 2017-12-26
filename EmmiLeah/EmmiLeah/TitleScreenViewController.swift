@@ -7,6 +7,11 @@
 //
 
 import UIKit
+import MetalKit
+
+enum Colors {
+    static let clearCol = MTLClearColor(red: 0.0, green: 0.4, blue: 0.21, alpha: 1.0)
+}
 
 class TitleScreenViewController: UIViewController {
     
@@ -16,12 +21,23 @@ class TitleScreenViewController: UIViewController {
     @IBOutlet weak var SettingsButton: UIButton!
     
     
+    var titleScreenView: MTKView {
+        return view as! MTKView
+    }
+    
+    var renderer:TranscendenceRenderer!
+
+    let device = MTLCreateSystemDefaultDevice()
     var player:EmmiLeahPlayer = EmmiLeahPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        titleScreenView.device = MTLCreateSystemDefaultDevice()
+        renderer = TranscendenceRenderer(aDevice: titleScreenView.device!)
+        titleScreenView.clearColor = Colors.clearCol
+        titleScreenView.delegate = self
+        renderer.commandQueue  = renderer.device.makeCommandQueue()
         
     }
     
@@ -35,6 +51,18 @@ class TitleScreenViewController: UIViewController {
             let destination = segue.destination as! SelectionViewController
             destination.player = player
         }
+    }
+    
+}
+
+extension TitleScreenViewController: MTKViewDelegate {
+    public func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
+        
+    }
+    
+    public func draw(in view: MTKView) {
+        renderer.render(aView: view)
+        
     }
     
 }
