@@ -25,6 +25,8 @@
 		2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */; };
 		2244FB571FEF218D0085AD36 /* GamePlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */; };
 		2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB581FEF4D0D0085AD36 /* Transcendence.swift */; };
+		2244FB5B1FF330F60085AD36 /* fragShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5A1FF330F60085AD36 /* fragShader.metal */; };
+		2244FB5D1FF331010085AD36 /* vertShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5C1FF331010085AD36 /* vertShader.metal */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleScreenViewController.swift; sourceTree = "<group>"; };
 		2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePlayViewController.swift; sourceTree = "<group>"; };
 		2244FB581FEF4D0D0085AD36 /* Transcendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcendence.swift; sourceTree = "<group>"; };
+		2244FB5A1FF330F60085AD36 /* fragShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = fragShader.metal; sourceTree = "<group>"; };
+		2244FB5C1FF331010085AD36 /* vertShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vertShader.metal; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +131,8 @@
 				2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */,
 				2244FB581FEF4D0D0085AD36 /* Transcendence.swift */,
 				2244FB411FEDEF290085AD36 /* Player.swift */,
+				2244FB5A1FF330F60085AD36 /* fragShader.metal */,
+				2244FB5C1FF331010085AD36 /* vertShader.metal */,
 				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
 				2244FB451FEE04D60085AD36 /* Octalye.swift */,
 				2244FB471FEE32A70085AD36 /* Freya.swift */,
@@ -312,10 +318,12 @@
 				2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */,
 				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
 				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
+				2244FB5B1FF330F60085AD36 /* fragShader.metal in Sources */,
 				2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */,
 				2244FB481FEE32A70085AD36 /* Freya.swift in Sources */,
 				2244FB531FEEEF190085AD36 /* SelectionViewController.swift in Sources */,
 				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
+				2244FB5D1FF331010085AD36 /* vertShader.metal in Sources */,
 				2244FB571FEF218D0085AD36 /* GamePlayViewController.swift in Sources */,
 				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
 			);

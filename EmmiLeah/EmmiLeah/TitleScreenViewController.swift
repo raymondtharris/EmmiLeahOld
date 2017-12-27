@@ -10,7 +10,7 @@ import UIKit
 import MetalKit
 
 enum Colors {
-    static let clearCol = MTLClearColor(red: 0.0, green: 0.4, blue: 0.21, alpha: 1.0)
+    static let clearCol = MTLClearColor(red: 0.0, green: 0.0, blue: 0.21, alpha: 1.0)
 }
 
 class TitleScreenViewController: UIViewController {
@@ -20,6 +20,8 @@ class TitleScreenViewController: UIViewController {
     @IBOutlet weak var ShopButton: UIButton!
     @IBOutlet weak var SettingsButton: UIButton!
     
+    let tapGesture = UITapGestureRecognizer()
+    var taps: Array<OvreiPoke> = []
     
     var titleScreenView: MTKView {
         return view as! MTKView
@@ -27,16 +29,17 @@ class TitleScreenViewController: UIViewController {
     
     var renderer:TranscendenceRenderer!
 
-    let device = MTLCreateSystemDefaultDevice()
     var player:EmmiLeahPlayer = EmmiLeahPlayer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        tapGesture.addTarget(self, action: #selector (self.pokeOvrei(_:) ))
+        titleScreenView.addGestureRecognizer(tapGesture)
         titleScreenView.device = MTLCreateSystemDefaultDevice()
         renderer = TranscendenceRenderer(aDevice: titleScreenView.device!)
         titleScreenView.clearColor = Colors.clearCol
-        titleScreenView.delegate = self
+        titleScreenView.delegate = renderer
         renderer.commandQueue  = renderer.device.makeCommandQueue()
         
     }
@@ -52,17 +55,10 @@ class TitleScreenViewController: UIViewController {
             destination.player = player
         }
     }
+    @objc func pokeOvrei(_ sender:UITapGestureRecognizer) {
+        print("poke at:")
+    }
     
 }
 
-extension TitleScreenViewController: MTKViewDelegate {
-    public func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-        
-    }
-    
-    public func draw(in view: MTKView) {
-        renderer.render(aView: view)
-        
-    }
-    
-}
+

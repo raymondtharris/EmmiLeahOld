@@ -25,3 +25,13 @@ class Ovrei: CustomStringConvertible {
         maxKarh = 20
     }
 }
+
+
+class OvreiPoke: CustomStringConvertible {
+    var position = ""
+    var timestamp = ""
+    var description: String {
+        return "\(self.position) \(self.timestamp)"
+    }
+    
+}
