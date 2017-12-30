@@ -15,30 +15,45 @@ class TranscendenceRenderer: NSObject {
     var commandBuffer: MTLCommandBuffer!
     var pipelineState: MTLRenderPipelineState!
     var vertexBuffer: MTLBuffer!
+    var vertexBuffer2: MTLBuffer!
+    
     var device: MTLDevice!
     
-    
-    var blip: [Float] = [ 0,0.5,0, 0,0,0, 0.5,0,0, 0.5,0.5,0, 0,0.5,0, 0.5,0.0]
+    var taps: Array<OvreiPoke> = []
+    var aTap: CGPoint!
+    var anOvrei:Ovrei!
+
     
     init(aDevice: MTLDevice) {
         device = aDevice
         commandQueue = aDevice.makeCommandQueue()
         super.init()
+        anOvrei = Ovrei()
         buildBlip()
         buildPipeline()
     }
+    var vertexData:[Float] = [ -0.25,0.25,0,
+                               -0.25,-0.25,0,
+                               0.25,-0.25,0,
+                               0.25,0.25,0,
+                               -0.25,0.25,0,
+                               0.25,-0.25,0.0]
+    var vertexData2:[Float] = [0.0, 0.0, 0.0]
+    
     
     private func buildBlip() {
-        vertexBuffer = device.makeBuffer(bytes: blip, length: blip.count * MemoryLayout<Float>.size, options: [])
+        vertexBuffer = device.makeBuffer(bytes: vertexData, length: vertexData.count * MemoryLayout<Float>.size, options: [])!
+        vertexBuffer2 = device.makeBuffer(bytes: vertexData2, length: vertexData2.count * MemoryLayout<Float>.size, options: [])!
     }
     private func buildPipeline()  {
         let defaultLib = self.device.makeDefaultLibrary()
-        let fragmentShader = defaultLib?.makeFunction(name: "fragShader")
-        let vertexShader = defaultLib?.makeFunction(name: "vertShader")
+        let vertexProgram = defaultLib?.makeFunction(name: "vertShader")
+        let fragmentProgram = defaultLib?.makeFunction(name: "fragShader")
+        
         
         let pipelineStateDescriptor = MTLRenderPipelineDescriptor()
-        pipelineStateDescriptor.vertexFunction = vertexShader
-        pipelineStateDescriptor.fragmentFunction = fragmentShader
+        pipelineStateDescriptor.vertexFunction = vertexProgram
+        pipelineStateDescriptor.fragmentFunction = fragmentProgram
         pipelineStateDescriptor.colorAttachments[0].pixelFormat = .bgra8Unorm
         
         do {
@@ -51,17 +66,29 @@ class TranscendenceRenderer: NSObject {
     func render(aView: MTKView) {
         guard let drawable = aView.currentDrawable,let pipelineState = pipelineState, let descriptor = aView.currentRenderPassDescriptor else { return  }
         
+        if (aTap) != nil {
+           // print("\(aTap)")
+            let normalized = normalizeTap(aPos: aTap, aView: aView)
+                vertexData2 = [Float(normalized.x), Float(normalized.y), 0.0]
+            vertexBuffer2 = device.makeBuffer(bytes: vertexData2, length: vertexData2.count * MemoryLayout<Float>.size, options: [])!
+        }
+
         commandBuffer = commandQueue.makeCommandBuffer()
         commandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: descriptor)
         
         commandEncoder.setRenderPipelineState(pipelineState)
         commandEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
-        commandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: blip.count)
+        commandEncoder.setVertexBuffer(vertexBuffer2, offset: 0, index: 1)
+        commandEncoder.drawPrimitives(type: .triangle, vertexStart: 0, vertexCount: vertexData.count)
         commandEncoder.endEncoding()
         commandBuffer.present(drawable)
         commandBuffer.commit()
     }
     
+}
+
+extension TranscendenceRenderer: UIGestureRecognizerDelegate {
+   
 }
 
 extension TranscendenceRenderer: MTKViewDelegate {

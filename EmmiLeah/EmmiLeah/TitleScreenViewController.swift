@@ -21,7 +21,7 @@ class TitleScreenViewController: UIViewController {
     @IBOutlet weak var SettingsButton: UIButton!
     
     let tapGesture = UITapGestureRecognizer()
-    var taps: Array<OvreiPoke> = []
+    
     
     var titleScreenView: MTKView {
         return view as! MTKView
@@ -31,11 +31,14 @@ class TitleScreenViewController: UIViewController {
 
     var player:EmmiLeahPlayer = EmmiLeahPlayer()
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         tapGesture.addTarget(self, action: #selector (self.pokeOvrei(_:) ))
         titleScreenView.addGestureRecognizer(tapGesture)
+        tapGesture.delegate = renderer
         titleScreenView.device = MTLCreateSystemDefaultDevice()
         renderer = TranscendenceRenderer(aDevice: titleScreenView.device!)
         titleScreenView.clearColor = Colors.clearCol
@@ -55,8 +58,13 @@ class TitleScreenViewController: UIViewController {
             destination.player = player
         }
     }
+    
     @objc func pokeOvrei(_ sender:UITapGestureRecognizer) {
-        print("poke at:")
+        let location = sender.location(in: titleScreenView)
+        let poke = OvreiPoke(aPosition: location)
+        renderer.taps.append(poke)
+        renderer.aTap = location
+        //print("poke at: \(poke)")
     }
     
 }
