@@ -30,4 +30,9 @@ class SelectionViewController: UIViewController {
             destination.player = player
         }
     }
+    
+    @IBAction func goBackToTitleScreenViewController(_ sender: Any) {
+        self.dismiss(animated: true, completion: {})
+    }
+    
 }

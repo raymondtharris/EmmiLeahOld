@@ -27,6 +27,7 @@
 		2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB581FEF4D0D0085AD36 /* Transcendence.swift */; };
 		2244FB5B1FF330F60085AD36 /* fragShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5A1FF330F60085AD36 /* fragShader.metal */; };
 		2244FB5D1FF331010085AD36 /* vertShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5C1FF331010085AD36 /* vertShader.metal */; };
+		2244FB5F1FF85B200085AD36 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5E1FF85B200085AD36 /* Button.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +74,7 @@
 		2244FB581FEF4D0D0085AD36 /* Transcendence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcendence.swift; sourceTree = "<group>"; };
 		2244FB5A1FF330F60085AD36 /* fragShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = fragShader.metal; sourceTree = "<group>"; };
 		2244FB5C1FF331010085AD36 /* vertShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vertShader.metal; sourceTree = "<group>"; };
+		2244FB5E1FF85B200085AD36 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */,
 				2244FB581FEF4D0D0085AD36 /* Transcendence.swift */,
 				2244FB411FEDEF290085AD36 /* Player.swift */,
+				2244FB5E1FF85B200085AD36 /* Button.swift */,
 				2244FB5A1FF330F60085AD36 /* fragShader.metal */,
 				2244FB5C1FF331010085AD36 /* vertShader.metal */,
 				2244FB431FEDFFE10085AD36 /* Ovrei.swift */,
@@ -325,6 +328,7 @@
 				2244FB461FEE04D60085AD36 /* Octalye.swift in Sources */,
 				2244FB5D1FF331010085AD36 /* vertShader.metal in Sources */,
 				2244FB571FEF218D0085AD36 /* GamePlayViewController.swift in Sources */,
+				2244FB5F1FF85B200085AD36 /* Button.swift in Sources */,
 				2244FB441FEDFFE10085AD36 /* Ovrei.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,7 +53,7 @@ class OvreiPoke: CustomStringConvertible {
 
 
 func normalizeTap(aPos: CGPoint, aView: UIView ) -> CGPoint {
-    print("point:\(aPos)  viewHeight:\(aView.frame.height/2)")
+    //print("point:\(aPos)  viewHeight:\(aView.frame.height/2)")
     var newX:CGFloat = 0.0
     var newY:CGFloat = 0.0
     let halfHeight = aView.frame.height/2
@@ -72,6 +72,6 @@ func normalizeTap(aPos: CGPoint, aView: UIView ) -> CGPoint {
         let posWidth = aPos.x - halfWidth
         newX = (posWidth/halfWidth)
     }
-    print("x:\(newX) y:\(newY)")
+    //print("x:\(newX) y:\(newY)")
     return CGPoint(x: newX, y: newY)
 }
