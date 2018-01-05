@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="TitleScreenViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="MTKView">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EmmiLeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-vb-YHG">
@@ -24,24 +24,36 @@
                                 <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-ns-KJO">
-                                <rect key="frame" x="94" y="420" width="186" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-ns-KJO" customClass="TitleButton" customModule="EmmiLeah" customModuleProvider="target">
+                                <rect key="frame" x="20" y="542" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="GSk-sv-TcX"/>
+                                    <constraint firstAttribute="height" constant="40" id="Phn-NO-8WO"/>
+                                </constraints>
                                 <color key="tintColor" red="0.84065672589999996" green="0.84065672589999996" blue="0.84065672589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Arcade"/>
                                 <connections>
                                     <segue destination="41D-Ic-1hm" kind="show" identifier="showSelectionSegue" id="nDD-vZ-qZi"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-4M-cdl" customClass="TitleButton" customModule="EmmiLeah" customModuleProvider="target">
-                                <rect key="frame" x="95" y="525" width="186" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yP6-4M-cdl" customClass="TitleButton" customModule="EmmiLeah" customModuleProvider="target">
+                                <rect key="frame" x="20" y="647" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="PY4-S9-Zi2"/>
+                                    <constraint firstAttribute="width" constant="374" id="rM9-Mt-Kxw"/>
+                                </constraints>
                                 <color key="tintColor" red="0.84065672589999996" green="0.84065672589999996" blue="0.84065672589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Settings"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPi-xp-OJr">
-                                <rect key="frame" x="95" y="472" width="186" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPi-xp-OJr" customClass="TitleButton" customModule="EmmiLeah" customModuleProvider="target">
+                                <rect key="frame" x="20" y="594" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="vUm-3b-WB2"/>
+                                    <constraint firstAttribute="width" constant="374" id="wkU-UD-4tD"/>
+                                </constraints>
                                 <color key="tintColor" red="0.84065672589999996" green="0.84065672589999996" blue="0.84065672589999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Shop"/>
                                 <connections>
@@ -52,13 +64,13 @@
                         <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
                             <constraint firstItem="4f7-vb-YHG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="02I-0d-F7l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yP6-4M-cdl" secondAttribute="bottom" constant="49" id="2Jm-92-UHA"/>
                             <constraint firstItem="4f7-vb-YHG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Olk-my-baC"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yP6-4M-cdl" secondAttribute="bottom" constant="112" id="SD5-iE-a8M"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPi-xp-OJr" secondAttribute="bottom" constant="165" id="VD7-bO-fKl"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bmn-ns-KJO" secondAttribute="bottom" constant="217" id="XM1-yT-DQA"/>
                             <constraint firstItem="Bmn-ns-KJO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xtj-xW-wN3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPi-xp-OJr" secondAttribute="bottom" constant="102" id="fCp-Xb-Uch"/>
                             <constraint firstItem="FPi-xp-OJr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="h3u-4W-G0A"/>
                             <constraint firstItem="yP6-4M-cdl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="hTV-nR-ZsS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Bmn-ns-KJO" secondAttribute="bottom" constant="154" id="qfc-LO-YEx"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -71,14 +83,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.40000000000001" y="132.68365817091455"/>
+            <point key="canvasLocation" x="137.68115942028987" y="132.06521739130434"/>
         </scene>
         <!--Selection View Controller-->
         <scene sceneID="ME8-Jb-RNn">
             <objects>
                 <viewController id="41D-Ic-1hm" customClass="SelectionViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ejS-0G-oSP">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vF-1B-rB6">
@@ -112,7 +124,7 @@
             <objects>
                 <viewController id="xi4-LW-leg" customClass="GamePlayViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fxd-zZ-v4J">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoC-WG-H1f">
@@ -141,7 +153,7 @@
             <objects>
                 <viewController id="3c0-Tn-1xN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SMs-2v-3dc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-A7-bEt">
@@ -154,11 +166,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QdK-7D-z98">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QdK-7D-z98">
                                         <rect key="frame" x="0.0" y="28" width="337" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QdK-7D-z98" id="OZe-FX-2p0">
-                                            <rect key="frame" x="0.0" y="0.0" width="337" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="337" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEM-3g-Z1k">

@@ -10,10 +10,15 @@ import UIKit
 
 class TitleButton: UIButton {
     override init(frame: CGRect) {
-        super.init(frame: CGRect(origin: frame.origin, size: CGSize(width: 200, height: frame.height)))
+        super.init(frame: CGRect(origin: frame.origin, size: CGSize(width: frame.width, height: frame.height)))
+        
     }
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        frame = CGRect(x: frame.origin.x, y: frame.origin.y, width: 168, height: frame.height)
+        self.layer.shadowColor = UIColor.lightGray.cgColor
+        self.layer.shadowOffset = CGSize(width: 0.0, height: -3.0)
+        self.layer.shadowOpacity = 1.0
+        self.layer.masksToBounds = false
+        self.layer.cornerRadius = 4
     }
 }
