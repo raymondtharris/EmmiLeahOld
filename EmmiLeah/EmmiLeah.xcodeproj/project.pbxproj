@@ -28,6 +28,7 @@
 		2244FB5B1FF330F60085AD36 /* fragShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5A1FF330F60085AD36 /* fragShader.metal */; };
 		2244FB5D1FF331010085AD36 /* vertShader.metal in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5C1FF331010085AD36 /* vertShader.metal */; };
 		2244FB5F1FF85B200085AD36 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB5E1FF85B200085AD36 /* Button.swift */; };
+		2244FB632001A97C0085AD36 /* GamePauseViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2244FB622001A97C0085AD36 /* GamePauseViewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		2244FB5A1FF330F60085AD36 /* fragShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = fragShader.metal; sourceTree = "<group>"; };
 		2244FB5C1FF331010085AD36 /* vertShader.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = vertShader.metal; sourceTree = "<group>"; };
 		2244FB5E1FF85B200085AD36 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		2244FB622001A97C0085AD36 /* GamePauseViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamePauseViewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				2244FB521FEEEF190085AD36 /* SelectionViewController.swift */,
 				2244FB541FEEF2ED0085AD36 /* TitleScreenViewController.swift */,
 				2244FB561FEF218D0085AD36 /* GamePlayViewController.swift */,
+				2244FB622001A97C0085AD36 /* GamePauseViewViewController.swift */,
 				2244FB581FEF4D0D0085AD36 /* Transcendence.swift */,
 				2244FB411FEDEF290085AD36 /* Player.swift */,
 				2244FB5E1FF85B200085AD36 /* Button.swift */,
@@ -321,6 +324,7 @@
 				2244FB591FEF4D0D0085AD36 /* Transcendence.swift in Sources */,
 				2244FB421FEDEF290085AD36 /* Player.swift in Sources */,
 				2244FB141FEDEE940085AD36 /* AppDelegate.swift in Sources */,
+				2244FB632001A97C0085AD36 /* GamePauseViewViewController.swift in Sources */,
 				2244FB5B1FF330F60085AD36 /* fragShader.metal in Sources */,
 				2244FB551FEEF2ED0085AD36 /* TitleScreenViewController.swift in Sources */,
 				2244FB481FEE32A70085AD36 /* Freya.swift in Sources */,

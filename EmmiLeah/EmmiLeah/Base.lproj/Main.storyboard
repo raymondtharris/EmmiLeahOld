@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EmmiLeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-vb-YHG">
-                                <rect key="frame" x="87" y="62" width="200" height="54"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="41"/>
-                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmn-ns-KJO" customClass="TitleButton" customModule="EmmiLeah" customModuleProvider="target">
                                 <rect key="frame" x="20" y="542" width="374" height="40"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -60,11 +54,18 @@
                                     <segue destination="3c0-Tn-1xN" kind="show" id="0ar-yx-QOn"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="EmmiLeah" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4f7-vb-YHG">
+                                <rect key="frame" x="20" y="37" width="374" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="62"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" name="alternateSelectedControlColor" catalog="System" colorSpace="catalog"/>
                         <constraints>
                             <constraint firstItem="4f7-vb-YHG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="02I-0d-F7l"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yP6-4M-cdl" secondAttribute="bottom" constant="49" id="2Jm-92-UHA"/>
+                            <constraint firstItem="4f7-vb-YHG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="9i8-aX-pfi"/>
                             <constraint firstItem="4f7-vb-YHG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Olk-my-baC"/>
                             <constraint firstItem="Bmn-ns-KJO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Xtj-xW-wN3"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FPi-xp-OJr" secondAttribute="bottom" constant="102" id="fCp-Xb-Uch"/>
@@ -89,12 +90,12 @@
         <scene sceneID="ME8-Jb-RNn">
             <objects>
                 <viewController id="41D-Ic-1hm" customClass="SelectionViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="ejS-0G-oSP">
+                    <view key="view" contentMode="scaleToFill" id="ejS-0G-oSP" customClass="MTKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8vF-1B-rB6">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <rect key="frame" x="20" y="686" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -102,7 +103,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2d4-9H-Woo">
-                                <rect key="frame" x="131" y="542" width="112" height="30"/>
+                                <rect key="frame" x="151" y="571" width="112" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
                                 <state key="normal" title="Start"/>
@@ -123,30 +124,93 @@
         <scene sceneID="dZD-VK-3EY">
             <objects>
                 <viewController id="xi4-LW-leg" customClass="GamePlayViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fxd-zZ-v4J">
+                    <view key="view" contentMode="scaleToFill" id="fxd-zZ-v4J" customClass="MTKView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XoC-WG-H1f">
-                                <rect key="frame" x="16" y="617" width="46" height="30"/>
+                                <rect key="frame" x="20" y="686" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Pause"/>
+                                <connections>
+                                    <segue destination="y8P-66-8pR" kind="presentation" identifier="PauseMenuPopover" modalPresentationStyle="overCurrentContext" id="p5W-us-QEf"/>
+                                </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysH-4C-NMS">
-                                <rect key="frame" x="113" y="20" width="148" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ysH-4C-NMS">
+                                <rect key="frame" x="133" y="20" width="148" height="35"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ysH-4C-NMS" firstAttribute="top" secondItem="NHV-yA-Ox3" secondAttribute="top" id="Pfl-8K-RGC"/>
+                            <constraint firstItem="ysH-4C-NMS" firstAttribute="centerX" secondItem="NHV-yA-Ox3" secondAttribute="centerX" id="bdG-Az-00n"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="NHV-yA-Ox3"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8pN-s9-M61" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2005.5999999999999" y="-181.25937031484258"/>
+            <point key="canvasLocation" x="2004.3478260869567" y="-181.79347826086959"/>
+        </scene>
+        <!--Game Pause View Controller-->
+        <scene sceneID="Vzt-Bw-GSG">
+            <objects>
+                <viewController modalPresentationStyle="overCurrentContext" id="y8P-66-8pR" customClass="GamePauseViewController" customModule="EmmiLeah" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hBI-RN-mFf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YoG-HW-Yp9">
+                                <rect key="frame" x="20" y="276" width="374" height="204"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sX-uI-yjJ">
+                                        <rect key="frame" x="65" y="69" width="245" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <state key="normal" title="Resume"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-rp-tEK">
+                                        <rect key="frame" x="153" y="133" width="68" height="47"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                        <state key="normal" title="Quit"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Paused" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F5j-O3-zdU">
+                                        <rect key="frame" x="111.66666666666674" y="2.6666666666666288" width="150.66666666666663" height="57.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="48"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TIE-rp-tEK" secondAttribute="bottom" constant="24" id="7hn-E5-R7L"/>
+                                    <constraint firstItem="1sX-uI-yjJ" firstAttribute="centerY" secondItem="YoG-HW-Yp9" secondAttribute="centerY" id="AWX-HM-qS4"/>
+                                    <constraint firstItem="F5j-O3-zdU" firstAttribute="centerX" secondItem="YoG-HW-Yp9" secondAttribute="centerX" id="DWG-e6-qMq"/>
+                                    <constraint firstItem="1sX-uI-yjJ" firstAttribute="centerX" secondItem="YoG-HW-Yp9" secondAttribute="centerX" id="Tgd-WH-IDr"/>
+                                    <constraint firstItem="1sX-uI-yjJ" firstAttribute="top" secondItem="F5j-O3-zdU" secondAttribute="bottom" constant="9.0000000000000284" id="Xya-qw-u0H"/>
+                                    <constraint firstAttribute="height" constant="204" id="azm-Yd-cQl"/>
+                                    <constraint firstItem="TIE-rp-tEK" firstAttribute="centerX" secondItem="YoG-HW-Yp9" secondAttribute="centerX" id="g4z-ye-uPm"/>
+                                    <constraint firstAttribute="width" constant="374" id="kCR-o4-ktx"/>
+                                    <constraint firstItem="TIE-rp-tEK" firstAttribute="top" secondItem="1sX-uI-yjJ" secondAttribute="bottom" constant="4" id="t6O-YD-nVF"/>
+                                    <constraint firstItem="F5j-O3-zdU" firstAttribute="top" secondItem="YoG-HW-Yp9" secondAttribute="top" constant="2.6666666666666288" id="xFp-7G-OLV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="YoG-HW-Yp9" firstAttribute="centerX" secondItem="eeU-87-J7K" secondAttribute="centerX" id="9dN-5y-Iza"/>
+                            <constraint firstItem="YoG-HW-Yp9" firstAttribute="centerY" secondItem="eeU-87-J7K" secondAttribute="centerY" id="BI9-DA-QOF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="eeU-87-J7K"/>
+                    </view>
+                    <connections>
+                        <outlet property="GamePauseContainerView" destination="YoG-HW-Yp9" id="AB4-uz-ydh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WEC-7Q-Hdv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2852.1739130434785" y="28.532608695652176"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="d0x-ds-F3G">
@@ -156,21 +220,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-A7-bEt">
-                                <rect key="frame" x="22" y="617" width="34" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gyj-Et-yj0">
-                                <rect key="frame" x="22" y="72" width="337" height="523"/>
+                                <rect key="frame" x="22" y="72" width="372" height="586"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QdK-7D-z98">
-                                        <rect key="frame" x="0.0" y="28" width="337" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="QdK-7D-z98">
+                                        <rect key="frame" x="0.0" y="28" width="372" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="QdK-7D-z98" id="OZe-FX-2p0">
-                                            <rect key="frame" x="0.0" y="0.0" width="337" height="43.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="372" height="43.666666666666664"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEM-3g-Z1k">
@@ -181,7 +240,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M96-EN-hBJ">
-                                                    <rect key="frame" x="240" y="6" width="82" height="30"/>
+                                                    <rect key="frame" x="275" y="7" width="82" height="30"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <state key="normal" title="Buy"/>
                                                 </button>
@@ -197,6 +256,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkE-A7-bEt">
+                                <rect key="frame" x="20" y="686" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="8mn-jE-Kru"/>
@@ -204,7 +268,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sgj-qV-QZw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1028" y="507.79610194902551"/>
+            <point key="canvasLocation" x="1027.536231884058" y="507.06521739130437"/>
         </scene>
     </scenes>
 </document>
