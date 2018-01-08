@@ -56,6 +56,7 @@ class TitleScreenViewController: UIViewController {
         if segue.identifier == "showSelectionSegue" {
             let destination = segue.destination as! SelectionViewController
             destination.player = player
+            destination.renderer = renderer
         }
     }
     
